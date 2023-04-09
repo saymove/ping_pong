@@ -1,10 +1,10 @@
 from pygame import *
-window = display.set_mode((1100, 800))
+window = display.set_mode((1500, 800))
 display.set_caption("Пинг понг")
-back = transform.scale(image.load('garazii.jpg'), (1100, 800))
+back = transform.scale(image.load('ggg.jpg'), (1500, 800))
 
-mazl = transform.scale(image.load('mazzelov.png'), (320, 250))
-sh = transform.scale(image.load('shkolnik.png'), (230, 250))
+mazl = transform.scale(image.load('mazzelov.png'), (320, 280))
+sh = transform.scale(image.load('shcolnik.png'), (320, 280))
 bolt = transform.scale(image.load('bolt.png'), (150, 150))
 game = True
 
@@ -29,13 +29,13 @@ class Player(GameSprite):
         if keys[K_s] and self.rect.y<550:
             self.rect.y += self.speed
 
-maz = Player('mazzelov.png', -30, 300, 320, 250, 10)
+maz = Player('mazzelov.png', -50, 300, 320, 250, 10)
 
 while game:
     window.blit(back, (0, 0)) 
     #window.blit(maz, (-30, 300)) 
-    window.blit(sh, (820, 300))
-    window.blit(bolt,(400, 400))
+    window.blit(sh, (1210, 260))
+    window.blit(bolt,(675, 400))
     for e in event.get():
         if e.type == QUIT:
             game = False
