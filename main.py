@@ -1,8 +1,8 @@
 from pygame import *
 
-window = display.set_mode((1500, 800))
+window = display.set_mode((1100, 750))
 display.set_caption("Пинг понг")
-back = transform.scale(image.load('ggg.jpg'), (1500, 800))
+back = transform.scale(image.load('ggg.jpg'), (1100, 750))
 clock = time.Clock()
 
 mazl = transform.scale(image.load('mazzelov.png'), (320, 280))
